@@ -1,6 +1,6 @@
-<!doctype html>
+export const legacyIndex = `<!doctype html>
 <html lang="en" data-bs-theme="auto">
-  <head><script src="assets/js/color-modes.js"></script>
+  <head><script src="./assets/js/color-modes.js"></script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -157,7 +157,7 @@
   <h1 class="visually-hidden">Portfolio</h1>
 
   <div class="px-4 py-5 my-5 text-center">
-    <img class="d-block mx-auto mb-4" src="assets/imgs/logo.png" alt="" width="60" height="60">
+    <img class="d-block mx-auto mb-4" src="./assets/imgs/logo.png" alt="" width="60" height="60">
     <h1 class="display-5 fw-bold text-body-emphasis">M. Gielert - Portfolio</h1>
     <div class="col-lg-6 mx-auto">
       <p class="lead mb-4">I'm a graduate with a Master's degree in Artificial Intelligence in Biomedical Enginering. I spent two years as a Python Developer in a corporate setting and one year as a freelance developer, specializing mainly in C#. Here are the main projects that i have been working on beside work.</p>
@@ -190,13 +190,13 @@
           <p class="lead mb-4 text-body-emphasis">Technology stack</p>
             <ul class="list-group shadow">
               <li class="list-group-item list-group-item-dark">
-                <a href="https://www.python.org/"><img class="img-fluid" src="assets/imgs/python-logo-generic.svg" width="250" height="60"></a>
-                <a href="https://www.tensorflow.org/"><img class="img-fluid" src="assets/imgs/TF_White_Primary_Horizontal.svg" width="250" height="60"></a>
-                <a href="https://numpy.org/"><img class="img-fluid" src="assets/imgs/numpylogolight.png" width="145" height="65"></a>
-                <a href="https://pandas.pydata.org/"><img class="img-fluid" src="assets/imgs/pandas_white.svg" width="250" height="60"></a>
-                <a href="https://scikit-learn.org/"><img class="img-fluid" src="assets/imgs/scikit-learn-logo-notext.png" width="200" height="50"></a>
+                <a href="https://www.python.org/"><img class="img-fluid" src="./assets/imgs/python-logo-generic.svg" width="250" height="60"></a>
+                <a href="https://www.tensorflow.org/"><img class="img-fluid" src="./assets/imgs/TF_White_Primary_Horizontal.svg" width="250" height="60"></a>
+                <a href="https://numpy.org/"><img class="img-fluid" src="./assets/imgs/numpylogolight.png" width="145" height="65"></a>
+                <a href="https://pandas.pydata.org/"><img class="img-fluid" src="./assets/imgs/pandas_white.svg" width="250" height="60"></a>
+                <a href="https://scikit-learn.org/"><img class="img-fluid" src="./assets/imgs/scikit-learn-logo-notext.png" width="200" height="50"></a>
                 <p class="nibabel-text">
-                  <a href="https://nipy.org/nibabel/"></a><img class="img-fluid" src="assets/imgs/nibabel-logo.svg" width="100" height="60"> NiBabel</a>
+                  <a href="https://nipy.org/nibabel/"></a><img class="img-fluid" src="./assets/imgs/nibabel-logo.svg" width="100" height="60"> NiBabel</a>
                 </p> </li>
             </ul>
         </div>
@@ -205,7 +205,7 @@
       <div class="collapse multi-collapse" id="gfx-abstract-collapse">
         <div class="container px-5">
           <p class="lead mb-4 text-body-emphasis">Graphical abstract</p>
-          <img src="assets/imgs/ANG gfx abstract v2.svg" class="img-fluid border rounded-3 shadow mb-4" alt="gfx abstract" width="700" height="1600" loading="lazy">
+          <img src="./assets/imgs/ANG gfx abstract v2.svg" class="img-fluid border rounded-3 shadow mb-4" alt="gfx abstract" width="700" height="1600" loading="lazy">
         </div>
       </div>
 
@@ -258,12 +258,12 @@
           <p class="lead mb-4 text-body-emphasis">Technology stack</p>
             <ul class="list-group shadow">
               <li class="list-group-item list-group-item-dark">
-                <a href="https://www.python.org/"><img class="img-fluid" src="assets/imgs/python-logo-generic.svg" width="250" height="60"></a>
-                <a href="https://www.tensorflow.org/"><img class="img-fluid" src="assets/imgs/TF_White_Primary_Horizontal.svg" width="250" height="60"></a>
-                <a href="https://numpy.org/"><img class="img-fluid" src="assets/imgs/numpylogolight.png" width="145" height="65"></a>
-                <a href="https://pandas.pydata.org/"><img class="img-fluid" src="assets/imgs/pandas_white.svg" width="250" height="60"></a>
-                <a href="https://scikit-learn.org/"><img class="img-fluid" src="assets/imgs/scikit-learn-logo-notext.png" width="200" height="50"></a>
-                <a href="https://opencv.org/"><img class="img-fluid" src="assets/imgs/OpenCV_logo_white.svg" width="100" height="50"></a></li>
+                <a href="https://www.python.org/"><img class="img-fluid" src="./assets/imgs/python-logo-generic.svg" width="250" height="60"></a>
+                <a href="https://www.tensorflow.org/"><img class="img-fluid" src="./assets/imgs/TF_White_Primary_Horizontal.svg" width="250" height="60"></a>
+                <a href="https://numpy.org/"><img class="img-fluid" src="./assets/imgs/numpylogolight.png" width="145" height="65"></a>
+                <a href="https://pandas.pydata.org/"><img class="img-fluid" src="./assets/imgs/pandas_white.svg" width="250" height="60"></a>
+                <a href="https://scikit-learn.org/"><img class="img-fluid" src="./assets/imgs/scikit-learn-logo-notext.png" width="200" height="50"></a>
+                <a href="https://opencv.org/"><img class="img-fluid" src="./assets/imgs/OpenCV_logo_white.svg" width="100" height="50"></a></li>
             </ul>
         </div>
       </div>
@@ -275,4 +275,4 @@
 </main>
 
     </body>
-</html>
+</html>`
