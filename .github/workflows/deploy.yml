@@ -33,3 +33,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./portfolio/dist
+          publish_branch: main # Add this line to push to the main branch
