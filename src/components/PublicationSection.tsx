@@ -1,4 +1,3 @@
-import React from 'react';
 import { useCollapse } from '../hooks/useCollapse'; // Import the custom hook
 import pythonLogo from '../assets/imgs/python-logo-generic.svg';
 import tfLogo from '../assets/imgs/TF_White_Primary_Horizontal.svg';
