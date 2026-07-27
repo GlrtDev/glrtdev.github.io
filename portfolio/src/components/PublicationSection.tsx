@@ -11,7 +11,7 @@ function PublicationSection() {
 
   return (
     <div className="px-4 pt-5 my-5 text-center">
-      <h1 className="display-5 fw-bold text-body-emphasis col-lg-6 mx-auto">
+      <h1 className="h1 fw-bold text-body-emphasis col-lg-6 mx-auto">
         Publication: Assessing the attractiveness of human face based on machine learning
       </h1>
       <h4>27th International Conference on Knowledge-Based and Intelligent Information & Engineering Systems (KES 2023) · Sep 9, 2023</h4>
@@ -19,12 +19,12 @@ function PublicationSection() {
         <p className="lead mb-4">This study employs three different models, each focusing on distinct features, with the belief that this approach can yield more accurate results in assessing facial attractiveness. However, these models display systematic errors when applied to the Face Research Lab London Set database, possibly due to variations in image evaluation criteria between the two datasets.</p>
         <div className="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
           {/* Change button styles: first to secondary, second to primary */}
-            <a href="https://mostwiedzy.pl/en/publication/assessing-the-attractiveness-of-human-face-based-on-machine-learning,161148-1" type="button" className="btn btn-primary btn-lg px-4 me-sm-3">
+            <a href="https://mostwiedzy.pl/en/publication/assessing-the-attractiveness-of-human-face-based-on-machine-learning,161148-1" type="button" className="btn btn-primary btn-lg px-4 me-sm-3 rounded-pill">
             Show publication
             </a>
           <button 
             type="button" 
-            className="btn btn-outline-secondary btn-lg px-4" 
+            className="btn btn-outline-secondary btn-lg px-4 rounded-pill" 
             onClick={toggleCollapse}
             aria-expanded={!isCollapsed}
             aria-controls="technology-collapse2"

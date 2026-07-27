@@ -10,15 +10,15 @@ import gfxAbstract from '../assets/imgs/ANG gfx abstract v2.svg';
 function ProjectSection() {
   return (
     <div className="px-4 pt-5 my-5 text-center">
-      <h1 className="display-5 fw-bold text-body-emphasis col-lg-6 mx-auto">
+      <h1 className="h1 fw-bold text-body-emphasis col-lg-6 mx-auto">
         Analysis of space-time pressure signals from foot using machine learning methods
       </h1>
       <h4>Nov 2023</h4>
       <div className="col-lg-6 mx-auto">
         <p className="lead mb-4">In my master's diploma project, I focused on utilizing two different biased databases for the classification of hallux valgus and estimating the level of motion disability using machine learning methods. I proposed and implemented a gait phase recognition system based on fuzzy logic. This system allowed modifications to the databases to counteract their biases. Subsequently, I implemented machine learning methods on the modified dataset.</p>
         <div className="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-          <button type="button" className="btn btn-primary btn-lg px-4 me-sm-3" data-bs-toggle="collapse" data-bs-target="#gfx-abstract-collapse">Graphical abstract</button>
-          <button type="button" className="btn btn-outline-secondary btn-lg px-4" data-bs-toggle="collapse" data-bs-target="#technology-collapse">Technology stack</button>
+          <button type="button" className="btn btn-primary btn-lg px-4 me-sm-3 rounded-pill" data-bs-toggle="collapse" data-bs-target="#gfx-abstract-collapse">Graphical abstract</button>
+          <button type="button" className="btn btn-outline-secondary btn-lg px-4 rounded-pill" data-bs-toggle="collapse" data-bs-target="#technology-collapse">Technology stack</button>
         </div>
       </div>
       <div className="overflow-hidden" style={{ maxHeight: '100vh' }}>
