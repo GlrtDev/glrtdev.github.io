@@ -86,7 +86,6 @@ function App() {
     <>
     <ThemeToggle/>
     <main>
-      <h1 className="visually-hidden">Portfolio</h1>
       <HeroSection />
       <div className="b-example-divider"></div>
       
