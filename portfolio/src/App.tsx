@@ -4,6 +4,7 @@ import ThemeToggle from './components/ThemeToggle';
 import ProjectCard from './components/ProjectCard';
 import React from 'react';
 import gfxAbstract from './assets/imgs/gfx_foot_abstract.svg';
+import Footer from './components/Footer';
 
 const projects = [
   {
@@ -108,6 +109,7 @@ function App() {
       ))}
       <GameSection />
     </main>
+    <Footer />
     </>
   );
 }

@@ -104,8 +104,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   const iconToRender = mainLinkIcon !== undefined ? mainLinkIcon : (mainLinkLabel === 'View Project' ? DefaultGithubIcon : null);
 
   return (
-    <div className="px-4 pt-2 mb-5 mt-4 text-center">
-      <div className="col-lg-8 mx-auto">
+    <div className="px-3 pt-2 mb-5 mt-4 text-center">
+      <div className="col-12 col-md-10 col-lg-8 col-xl-7 mx-auto">
         <h2 className="h2 fw-bold text-body-emphasis mb-3">{title}</h2>
         <div className="lead text-secondary mb-4">{description}</div>
       </div>

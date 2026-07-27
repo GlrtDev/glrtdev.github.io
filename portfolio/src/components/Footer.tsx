@@ -9,10 +9,10 @@ type FooterProps = {
 };
 
 const Footer: React.FC<FooterProps> = ({
-  authorName = 'Your Name',
+  authorName = 'M. Gielert',
   githubUrl = 'https://github.com/GlrtDev',
-  linkedinUrl = 'https://linkedin.com',
-  email = 'contact@example.com',
+  linkedinUrl = 'https://www.linkedin.com/in/maciej-gielert/',
+  email = 'gielertmaciej@gmail.com',
 }) => {
   const currentYear = new Date().getFullYear();
 
