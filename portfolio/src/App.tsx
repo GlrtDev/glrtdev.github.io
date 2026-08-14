@@ -10,6 +10,29 @@ const projects = [
   {
     title: (
       <>
+        Agents United: Enterprise Unity Copilot{' '}
+        <span className="badge bg-warning text-dark fs-6 align-middle mb-2 ms-2">
+          WIP
+        </span>
+      </>
+    ) as any,
+    description:
+      'Enterprise-grade, multi-agent AI copilot for Unity C# development. Combines a Python FastAPI backend with a C# Roslyn compilation layer, using LangGraph and Tree-Sitter AST-aware RAG to autonomously generate, compile-verify, and commit scripts within an isolated Docker sandbox.',
+    techStack: [
+      'Python',
+      'C#',
+      'FastAPI',
+      'LangGraph',
+      'Docker',
+      'Roslyn',
+      'Tree-Sitter',
+      'LiteLLM',
+    ],
+    mainLink: 'https://github.com/GlrtDev/Agents-United',
+  },
+  {
+    title: (
+      <>
         LM Studio Context Architect{' '}
         <span className="badge bg-warning text-dark fs-6 align-middle mb-2 ms-2">
           WIP
