@@ -22,6 +22,7 @@ type ProjectCardProps = {
   title: React.ReactNode;
   description: React.ReactNode;
   graphicalAbstract?: string;   // Optional image path
+  youtubeLink?: string;         // Optional YouTube video link
   techStack?: string[];        // Combined tech stack
   frontendStack?: string[];    // Optional split stack
   backendStack?: string[];     // Optional split stack
@@ -32,7 +33,7 @@ type ProjectCardProps = {
   mainLinkIcon?: React.ReactNode;  // Custom icon or false to hide icon
 };
 
-type ActiveSection = 'gfx' | 'main' | 'frontend' | 'backend' | null;
+type ActiveSection = 'gfx' | 'main' | 'frontend' | 'backend' | 'youtube' | null;
 
 const techStackImages: Record<string, string> = {
   Python: pythonLogo,
@@ -58,10 +59,20 @@ const DefaultGithubIcon = (
   </svg>
 );
 
+// Helper to convert standard YouTube links into embed URLs
+const getYouTubeEmbedUrl = (url: string) => {
+  const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
+  const match = url.match(regExp);
+  return match && match[2].length === 11
+    ? `https://www.youtube.com/embed/${match[2]}`
+    : url;
+};
+
 const ProjectCard: React.FC<ProjectCardProps> = ({
   title,
   description,
   graphicalAbstract,
+  youtubeLink,
   techStack = [],
   frontendStack = [],
   backendStack = [],
@@ -125,6 +136,19 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             </Button>
           )}
 
+          {/* YouTube Video Toggle */}
+          {youtubeLink && (
+            <Button
+              variant="primary"
+              size="lg"
+              onClick={() => toggleSection('youtube')}
+              isCollapsed={activeSection !== 'youtube'}
+              controlsId="youtube-collapse"
+            >
+              Watch Video
+            </Button>
+          )}
+
           {/* Graphical Abstract Toggle */}
           {graphicalAbstract && (
             <Button
@@ -181,6 +205,25 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
       {/* Collapsible Sections */}
       <div className="col-lg-8 mx-auto">
+        {/* YouTube Section */}
+        {youtubeLink && (
+          <div className={`collapse ${activeSection === 'youtube' ? 'show' : ''}`} id="youtube-collapse">
+            <div className="p-3 mb-4 rounded-4 bg-body-tertiary border">
+              {/* Uses Bootstrap's ratio classes for a responsive iframe */}
+              <div className="ratio ratio-16x9">
+                <iframe
+                  src={getYouTubeEmbedUrl(youtubeLink)}
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="rounded-3 shadow"
+                  style={{ border: 0 }}
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        )}
+
         {graphicalAbstract && (
           <div className={`collapse ${activeSection === 'gfx' ? 'show' : ''}`} id="gfx-abstract-collapse">
             <div className="p-3 mb-4 rounded-4 bg-body-tertiary border">

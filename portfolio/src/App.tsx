@@ -29,6 +29,7 @@ const projects = [
       'LiteLLM',
     ],
     mainLink: 'https://github.com/GlrtDev/Agents-United',
+    youtubeLink: 'https://www.youtube.com/watch?v=qsN0mCYcBXg',
   },
   {
     title: (
@@ -102,6 +103,28 @@ const projects = [
   ) as any,
   techStack: ['Python', 'TensorFlow', 'NumPy', 'Pandas', 'scikit-learn', 'OpenCV'],
 },
+{
+    title: 'Game: 8 Bit Survivor',
+    description:
+      'This is the first game that I finished. Started with a small plan but ended up managing a big project with over 25,000 lines of code. Applied a lot of design patterns such as factory, builder, composite, facade etc. Also, this project helped me refresh more advance programming concepts like thread synchronization, integrating third-party code and web sockets.',
+    // You can add the specific languages/tools you used here, I left it empty based on the text
+    techStack: [], 
+    mainLink: 'https://play.google.com/store/apps/details?id=com.glrtdev.EightBitSurvivor',
+    mainLinkLabel: 'Google Play',
+    mainLinkIcon: (
+      <svg 
+        xmlns="http://www.w3.org/2000/svg" 
+        width="20" 
+        height="20" 
+        fill="currentColor" 
+        className="bi bi-google-play ms-2" 
+        viewBox="0 0 16 16"
+      >
+        <path d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055zM1 13.396V2.603L6.846 8zM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27"/>
+      </svg>
+    ),
+    youtubeLink: 'https://www.youtube.com/watch?v=A36u1vfFa8Y',
+  },
 ];
 
 
@@ -126,11 +149,11 @@ function App() {
             mainLinkLabel={project.mainLinkLabel}
             techStack={project.techStack}
             graphicalAbstract={project.graphicalAbstract}
+            youtubeLink={project.youtubeLink}
           />
           <div className="b-example-divider"></div>
         </React.Fragment>
       ))}
-      <GameSection />
     </main>
     <Footer />
     </>
