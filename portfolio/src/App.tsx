@@ -155,10 +155,11 @@ function App() {
       <ThemeToggle />
       <main>
         <HeroSection />
-        <div className="b-example-divider"></div>
+        {/* <div className="b-example-divider"></div> */}
         
         {projects.map((project, index) => (
           <React.Fragment key={index}>
+            <div className="b-example-divider"></div>
             <ProjectCard
               title={project.title}
               description={project.description}
@@ -172,7 +173,7 @@ function App() {
               graphicalAbstract={project.graphicalAbstract}
               youtubeLink={project.youtubeLink}
             />
-            <div className="b-example-divider"></div>
+
           </React.Fragment>
         ))}
       </main>
