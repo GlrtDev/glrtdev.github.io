@@ -34,8 +34,8 @@ const projects = [
     title: (
       <>
         Agents United: Enterprise Unity Copilot{' '}
-        <span className="badge bg-warning text-dark fs-6 align-middle mb-2 ms-2">
-          WIP
+        <span className="badge bg-info text-dark fs-6 align-middle mb-2 ms-2">
+          Interactive Demo
         </span>
       </>
     ) as any,
