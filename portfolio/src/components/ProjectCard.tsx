@@ -31,6 +31,8 @@ type ProjectCardProps = {
   mainLink?: string;
   mainLinkLabel?: React.ReactNode; // Custom text for primary link button
   mainLinkIcon?: React.ReactNode;  // Custom icon or false to hide icon
+  liveLink?: string;               // Live deployment URL
+  liveLinkLabel?: React.ReactNode; // Custom label, defaults to 'Live Demo'
 };
 
 type ActiveSection = 'gfx' | 'main' | 'frontend' | 'backend' | 'youtube' | null;
@@ -81,6 +83,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   mainLink,
   mainLinkLabel = 'View Project',
   mainLinkIcon,
+  liveLink,
+  liveLinkLabel = 'Live Demo',
 }) => {
   const [activeSection, setActiveSection] = useState<ActiveSection>(null);
 
@@ -124,6 +128,18 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       <div className="col-lg-7 mx-auto">
         {/* Action Buttons Group */}
         <div className="d-flex flex-wrap justify-content-center gap-2 mb-4">
+          {liveLink && (
+            <Button
+              variant="primary"
+              size="lg"
+              href={liveLink}
+              target="_blank"
+            >
+              <span className="live-dot" aria-hidden="true"></span>
+              {liveLinkLabel}
+            </Button>
+          )}
+
           {mainLink && (
             <Button 
               variant="primary" 

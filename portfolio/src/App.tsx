@@ -28,6 +28,7 @@ const projects = [
         'AWS ECS Fargate',
         'DynamoDB',
       ],
+      liveLink: 'https://d1g1h19kh4uixv.cloudfront.net/', // ← replace with your real URL
       mainLink: 'https://github.com/GlrtDev/gov-stat-scope',
     },
   {
@@ -172,6 +173,8 @@ function App() {
               techStack={project.techStack}
               graphicalAbstract={project.graphicalAbstract}
               youtubeLink={project.youtubeLink}
+              liveLink={project.liveLink}
+              liveLinkLabel={project.liveLinkLabel}
             />
 
           </React.Fragment>
