@@ -46,6 +46,7 @@ const projects: Project[] = [
         'DynamoDB',
       ],
       liveLink: 'https://d1g1h19kh4uixv.cloudfront.net/', // ← replace with your real URL
+      liveLinkLabel: 'Live Cloud Deployment (AWS)',
       mainLink: 'https://github.com/GlrtDev/gov-stat-scope',
     },
   {
