@@ -5,7 +5,24 @@ import React from 'react';
 import gfxAbstract from './assets/imgs/gfx_foot_abstract.svg';
 import Footer from './components/Footer';
 
-const projects = [
+interface Project {
+  title: React.ReactNode;
+  description: React.ReactNode;
+  frontendStack?: string[];
+  backendStack?: string[];
+  techStack?: string[];
+  mainLink?: string;
+  mainLinkLabel?: React.ReactNode;
+  mainLinkIcon?: React.ReactNode;
+  frontendLink?: string;
+  backendLink?: string;
+  liveLink?: string;
+  liveLinkLabel?: string;
+  youtubeLink?: string;
+  graphicalAbstract?: string;
+}
+
+const projects: Project[] = [
   {
       title: (
         <>

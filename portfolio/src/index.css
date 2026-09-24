@@ -182,3 +182,8 @@ button:focus-visible {
   70%, 100% { transform: scale(2.4); opacity: 0; }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .live-dot::before {
+    animation: none;
+  }
+}
