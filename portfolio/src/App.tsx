@@ -27,8 +27,8 @@ const projects: Project[] = [
       title: (
         <>
           GovStatScope{' '}
-          <span className="badge bg-warning text-dark fs-6 align-middle mb-2 ms-2">
-            WIP
+          <span className="badge bg-info text-dark fs-6 align-middle mb-2 ms-2">
+            Live
           </span>
         </>
       ) as any,
