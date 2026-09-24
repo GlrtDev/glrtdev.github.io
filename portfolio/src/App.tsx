@@ -33,22 +33,23 @@ const projects: Project[] = [
         </>
       ) as any,
       description:
-        'A stateful multi-agent orchestration platform built to query, normalize, and synthesize government statistical data. It leverages an autonomous AI workflow using LangGraph to route natural language queries to statistical agencies (GUS BDL for Poland, US FRED), construct exact API requests, and perform comparative data analysis.',
-      frontendStack: ['React 18', 'TypeScript', 'Vite', 'Tailwind CSS'],
+        'A stateful multi-agent orchestration platform built to query, normalize, and synthesize government statistical data. It leverages an autonomous LangGraph workflow (Router → API Engineer → Analyst) to route natural language queries to the appropriate statistical agency (GUS BDL for Poland, FRED for the US), construct accurate API requests, and perform comparative data analysis. Deployed on AWS: async FastAPI on Lambda with SSE streaming behind CloudFront, and DynamoDB for session checkpointing, GUS response caching, and daily LLM quota gating.',
+      frontendStack: ['React 18', 'TypeScript', 'Vite', 'TailwindCSS', 'S3 + CloudFront'],
       backendStack: [
-        'Python',
+        'Python 3.12',
         'FastAPI',
         'LangGraph',
         'Pydantic',
         'Amazon Bedrock',
-        'Docker',
-        'AWS ECS Fargate',
+        'AWS Lambda',
         'DynamoDB',
+        'AWS CDK',
+        'Docker',
       ],
       liveLink: 'https://d1g1h19kh4uixv.cloudfront.net/', // ← replace with your real URL
       liveLinkLabel: 'Live Cloud Deployment (AWS)',
       mainLink: 'https://github.com/GlrtDev/gov-stat-scope',
-    },
+  },
   {
     title: (
       <>
